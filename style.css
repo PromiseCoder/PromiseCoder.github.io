@@ -1,1 +1,15 @@
-
+html {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  word-break: break-word;
+}
+body {
+  margin: 0;
+}
+main {
+  margin: 0 8px;
+}
+button, [type="submit"], [type="button"] {
+  cursor: pointer;
+}
