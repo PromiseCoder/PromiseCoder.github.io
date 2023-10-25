@@ -24,7 +24,7 @@ function fetchData() {
       /*for(let i in result) {
         output.innerHTML += i+":"+result[i]+"<br>";
       }*/
-      output.innerHTML += `Image source: <a href="${result.thumbnail_url}" target="_blank">${result.thumbnail_url}</a><br><img src="${result.thumbnail_url}">`;
+      output.innerHTML += `Image source: <a href="${result.thumbnail_url}" target="_blank">${result.thumbnail_url}</a><br><img src="${result.thumbnail_url}" width="250">`;
     })
     .catch(e => {
       output.innerHTML += e;
