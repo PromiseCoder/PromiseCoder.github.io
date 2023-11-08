@@ -31,6 +31,11 @@ function fetchData() {
     });
 }
 
+idStrEl.addEventListener("change", () => {
+  if(idStrEl.value) {
+    idStrEl.value = idStrEl.value.split("?")[0];
+  }
+});
 formEl.addEventListener("change", checkSubmit);
 idStrEl.addEventListener("input", checkSubmit);
 formEl.addEventListener("submit", (e) => {
