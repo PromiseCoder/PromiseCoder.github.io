@@ -12,7 +12,7 @@ function checkSubmit() {
       type = typeOptions[i].value;
     }
   }//or do on submit
-  submitBtn.disabled = (idStrEl.value && type) ? false : true;
+  submitBtn.disabled = !(idStrEl.value && type);
 }
 function fetchData() {
   link = "https://open.spotify.com/oembed?url=" + (type !== "url" ? ("spotify:" + type + ":") : "") + idStrEl.value;
@@ -31,6 +31,9 @@ function fetchData() {
     });
 }
 
+idStrEl.addEventListener("change", () => {
+  idStrEl.value = idStrEl.value.split("?")[0];
+});
 formEl.addEventListener("change", checkSubmit);
 idStrEl.addEventListener("input", checkSubmit);
 formEl.addEventListener("submit", (e) => {
