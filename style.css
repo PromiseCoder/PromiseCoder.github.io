@@ -1,6 +1,4 @@
 html {
-  height: 100%;
-  width: 100%;
   font-family: sans-serif;
   word-break: break-word;
 }
@@ -9,10 +7,6 @@ body {
 }
 main {
   margin: 0 8px;
-}
-div {
-  /*check sp img tool*/
-  margin: 1em 0;
 }
 button, [type="submit"], [type="button"] {
   cursor: pointer;
