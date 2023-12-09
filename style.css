@@ -5,8 +5,8 @@ html {
 body {
   margin: 0;
 }
-main {
-  margin: 0 8px;
+header, main, footer {
+  margin: 8px;
 }
 button, [type="submit"], [type="button"] {
   cursor: pointer;
