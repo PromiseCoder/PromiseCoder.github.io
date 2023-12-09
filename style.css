@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
 }
-main {
+header, main, footer {
   margin: 0 8px;
 }
 button, [type="submit"], [type="button"] {
