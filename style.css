@@ -2,7 +2,9 @@ html {
   font-family: sans-serif;
   word-break: break-word;
 }
-body {
+body {  
+  height: 100%;
+  width: 100%;
   margin: 0;
 }
 header, main, footer {
